@@ -47,4 +47,32 @@ npm run dev
 ```bash
 # 构建生产版本
 npm run build
+
+# 预览生产版本
+npm run preview
 ```
+
+## 部署到Vercel
+
+1. 在GitHub上创建一个新的仓库
+2. 将项目代码推送到GitHub仓库
+3. 登录Vercel，点击"New Project"
+4. 导入您的GitHub仓库
+5. Vercel会自动检测项目配置，无需额外设置
+6. 点击"Deploy"完成部署
+
+## 注意事项
+
+- 目前项目中的文件结构是静态定义的，如果您修改了`PDFbook`文件夹的结构，需要相应地更新`src/App.jsx`中的`directoryStructure`数据
+- 为了确保文件能够正确下载，请确保您的文件路径和文件名使用英文或数字，避免使用特殊字符
+- 如果您的PDF文件较大，可能需要考虑使用CDN来优化加载速度
+
+## 技术栈
+
+- React - 前端框架
+- Vite - 构建工具
+- CSS - 样式设计
+
+## License
+
+MIT
