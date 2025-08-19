@@ -1,0 +1,168 @@
+/* 应用程序容器样式 */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+/* 应用程序头部样式 */
+.app-header {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* 应用程序主要内容样式 */
+.app-main {
+  flex: 1;
+}
+
+/* 文件浏览器样式 */
+.file-explorer {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+/* 浏览器头部样式 */
+.explorer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 返回按钮样式 */
+.back-button {
+  align-self: flex-start;
+}
+
+/* 面包屑导航样式 */
+.breadcrumb {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.breadcrumb-item {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-item:hover {
+  color: #646cff;
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* 文件列表样式 */
+.file-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* 文件项样式 */
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.file-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.item-name {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.directory .item-name:hover {
+  color: #646cff;
+  text-decoration: underline;
+}
+
+/* 下载链接样式 */
+.download-link {
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(100, 108, 255, 0.2);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.download-link:hover {
+  background-color: rgba(100, 108, 255, 0.3);
+}
+
+/* 应用程序底部样式 */
+.app-footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: auto;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .file-explorer {
+    padding: 1rem;
+  }
+  
+  .breadcrumb {
+    font-size: 1rem;
+  }
+  
+  .item-name {
+    font-size: 1rem;
+  }
+}
+
+/* 亮色主题样式 */
+@media (prefers-color-scheme: light) {
+  .file-explorer {
+    background-color: #f9f9f9;
+  }
+  
+  .explorer-header {
+    border-bottom-color: #e0e0e0;
+  }
+  
+  .breadcrumb-separator {
+    color: #999;
+  }
+  
+  .file-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .app-header,
+  .app-footer {
+    background-color: #f0f0f0;
+  }
+  
+  .download-link {
+    background-color: rgba(100, 108, 255, 0.1);
+  }
+  
+  .download-link:hover {
+    background-color: rgba(100, 108, 255, 0.2);
+  }
+}
