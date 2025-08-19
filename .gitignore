@@ -35,16 +35,16 @@ coverage
 *.lcov
 .nyc_output
 
-# Temporary files
-*.tmp
-*.temp
+# Build
+build
 .cache
-
-# OS generated files
-Thumbs.db
-.DS_Store
-
-# Package manager files
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+.parcel-cache
+.next
+.nuxt
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test
+.yarn-integrity
